@@ -15,27 +15,26 @@
     <!-- header tag added --><!-- Company logo -->
     <header>
         <!-- use ID for SEO logo -->
-        <h1>Hori<span id="seo">seo</span>n</h1>
-    </header>
+        <h1>Hori<span id ="seo">seo</span>n</h1>
 
-    <!-- Navigation links to the content -->    
-    <div>  
         <!-- use the NAV semantic for navigation bar-->  
         <nav>
-         <!-- Fix list <li><a></a><li> -->
-         <ul>
-            <li><a href="#search-engine-optimization">Search Engine Optimization</a></li>
-            <li><a href="#online-reputation-management">Online Reputation Management</a></li>
-            <li><a href="#social-media-marketing">Social Media Marketing</a></li>
-        </ul>
+            <!-- Fix list <li><a></a><li> -->
+            <ul>
+               <li><a href="#search-engine-optimization">Search Engine Optimization</a></li>
+               <li><a href="#online-reputation-management">Online Reputation Management</a></li>
+               <li><a href="#social-media-marketing">Social Media Marketing</a></li>
+           </ul>
         </nav>
-    </div>
+
+    </header>
+
+    <hr>
 
     <!-- Main image that is displayed to user on the landing page -->
     <!--replaced div hero with the actual image file-->
     <img class="home-img" src="./assets/images/digital-marketing-meeting.jpg" alt="Boardroom meeting">
 
-    <br>
 
     <!-- Benefits on lead, brand, and cost -->
     <div class="benefits">
@@ -62,19 +61,54 @@
             </div>
     </div>
 
-    <br>
+
 
     <!-- Content for search engine optimization, online reputation management, Social media marketing-->
     <div class="content">
         <!-- Missing id for linking from search nav, remove float -->
-        <div id="search-engine-optimization">
+        <div class="SectionSEO">
+
             <img src="./assets/images/search-engine-optimization.jpg" alt="Search engine optimization">
-            <h2>Search Engine Optimization</h2>
-            <p>
-                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-            </p>
+
+            <div id="search-engine-optimization">
+                    <h2>Search Engine Optimization</h2>
+                    <p>
+                    The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+                    </p>
+            </div>
+        </div>
+        
+        <div class="SectionORM">
+
+            <img src="./assets/images/online-reputation-management.jpg" alt="Online reputation management">
+
+            <div id="online-reputation-management">
+           
+                <h2>Online Reputation Management</h2>
+                <p>
+                    The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+                </p>
+            </div>
+
         </div>
 
+        <div class="SectionSMM">
+
+            <img src="./assets/images/social-media-marketing.jpg" alt="Social media marketing">
+
+            <div id="social-media-marketing">
+
+                <h2>Social Media Marketing</h2>
+                <p>
+                    Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+                </p>
+
+            </div>
+        
+        </div>
+
+    </div>
+<!-- 
         <div id="online-reputation-management">
             <img src="./assets/images/online-reputation-management.jpg" alt="Online reputation management">
             <h2>Online Reputation Management</h2>
@@ -89,8 +123,8 @@
             <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
             </p>
-        </div>
-    </div>
+        </div> -->
+    <!-- </div> -->
 
     <!-- Footer with company details and copy rights -->
     <!-- change class to <footer> -->

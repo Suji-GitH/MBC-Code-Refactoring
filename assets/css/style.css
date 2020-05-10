@@ -9,6 +9,10 @@ body {
     background-color: #d9dcd6;
 }
 
+hr {
+    border: 1px solid #fde67d;
+}
+
 /*Logo text and banner specification*/
 header {
     padding: 10px;
@@ -24,27 +28,25 @@ header h1 {
 }
 
 /* Colour for "seo" part in the logo*/
-.header h1 .seo {
-    color: #d9dcd6;
+header h1 #seo {
+    color: #fde67d;
 }
 
 /* Navigation bar specification */ /* removed .header with nav, fixed margin, background color, padding, float to match header banner*/
-nav {
-    padding-right: 15px;
-    padding-bottom: 10px;
+header nav {
     text-align: right;
     font-size: 20px;
     background-color: #2a607c;
 }
 
 /* Navigation link specification */
-nav li {
+header nav li {
     display: inline-block;
-    margin-left: 25px;
+    padding: 0px 0px 0px 20px;
 }
 
 /*Link text colour*/
-nav a {
+header nav a {
     color: #ffffff;
     text-decoration: none;
 }
@@ -52,6 +54,7 @@ nav a {
 /* Home image marketing boardroom specification */ /*changed hero to make bit more sense, removed height since its responsive, remove margin, remove background size,    */
 .home-img {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 /* Benefits specification */ /*remove margin, float, width, height, background, added flex, add width, display, box sizing, add flex direction */
@@ -59,7 +62,6 @@ nav a {
     width: 100%;
     display: flex;
     flex-direction: row;
-    /*padding: 20px;*/
     clear: both;
     text-align: center;
 }
@@ -82,45 +84,34 @@ nav a {
     padding: 0% 25%;
 }
 
-/*Content blocks*/ /* remove display inline block, remove margin */
 .content {
+    position: relative;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
 }
 
-/*Content img specification*/ /*grouped img into dev class content*/
-.content img {
-    width: 35%;
+.content .SectionSEO, 
+.SectionORM, 
+.SectionSMM {
+position: relative;
+max-width: auto;
+margin: 10px;
+padding: 15px;
+display: flex;
+color: white;
+background-color: #2a607c;  
 }
 
-/*Content header specification*/ /*grouped content into dev class content*/
-.content h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+.content img{
+    max-width: 25%;
+    flex: 0 0 150px;
 }
 
-/* Content specification */ /*Group all the content section*/
-#search-engine-optimization,
-#online-reputation-management,
+.content #search-engine-optimization, 
+#online-reputation-management, 
 #social-media-marketing {
-    flex: 1;
-    padding: 50px;
-    background-color: #0072bb;
-    color: #ffffff;
-    
-    
-    
-    /*margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: white;*/
+    margin-left: 20px;
 }
 
 /* Footer specification */
@@ -137,7 +128,24 @@ footer h2 {
 
 /* Changes for when screen resolution changes */
 @media screen and (max-width: 768px){
+    header nav li {
+        display: block;
+        padding: 0px 0px 5px 20px;
+    }
+    
     .benefits {
         flex-direction: column;
+    }
+
+    .content .SectionSEO,
+    .SectionORM,
+    .SectionSMM {
+        flex-direction: column;
+
+    }
+
+    .content img {
+        max-width: 100%;
+        margin: 10px;
     }
 }
